@@ -1,8 +1,10 @@
 import Banner from "./components/Banner";
+import CarouselProduct from "./components/CarouselProduct";
 const HomePage = () => {
   return (
-    <main className="container">
+    <main>
       <Banner />
+      <CarouselProduct />
     </main>
   );
 };

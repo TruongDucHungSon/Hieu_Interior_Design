@@ -3,27 +3,29 @@ import Link from "next/link";
 import BannerImage from "../../../assets/images/Banner.jpg";
 const Banner = () => {
   return (
-    <section className="relative">
-      <h4 className="absolute text-md font-medium left-[-187px] top-[290px] rotate-[-90deg] translate-x-10 hidden lg:block">
+    <section className="relative container">
+      <h4 className="absolute text-[#797979] text-md font-medium left-[-187px] top-[242px] rotate-[-90deg] translate-x-10 hidden lg:block">
         Book an orientation with
-        <span className="font-bold pl-1">Tran Hieu Designer</span>
+        <span className="font-bold text-[#000] pl-1">Tran Hieu Designer</span>
       </h4>
-      <div className="flex items-start lg:items-center relative flex-col lg:flex-row gap-8 lg:justify-between mt-10 lg:mt-20">
-        <div className="w-full lg:w-[40%] lg:pl-36">
-          <h4 className="text-3xl lg:text-5xl font-fair  w-250px">We Love</h4>
-          <p className="text-3xl lg:text-5xl font-fair ">Minimalism.</p>
-          <p className="text-[#797979] text-sm font-medium mt-2 mb-5 lg:mt-4 lg:mb-8 uppercase tracking-wider">
+      <div className="flex w-full items-start lg:items-start relative flex-col-reverse lg:flex-row gap-8 lg:justify-between mt-4 lg:mt-20">
+        <div className="w-full lg:w-[50%] lg:pl-64 mt-20">
+          <div className="w-[300px] ">
+            <h4 className="text-3xl lg:text-4xl font-fair ">We Love</h4>
+            <p className="text-3xl lg:text-4xl font-fair ">Minimalism.</p>
+          </div>
+          <p className="text-[#797979] text-[12px] font-medium mt-2 mb-5 lg:mt-4 lg:mb-8 uppercase tracking-wider">
             INTERIOR DESIGN
           </p>
 
           <Link
             href="/"
-            className="px-6 py-3 rounded-10px border border-3px-[#000000] "
+            className="px-4 text-sm py-2 lg:px-6 lg:py-3 rounded-10px border border-[3px]-[#000000] rounded-md"
           >
             View Project
           </Link>
         </div>
-        <div className="lg:w-[45%] w-full">
+        <div className="lg:w-[45%] w-full h-[260px] md:h-[350px] lg:h-fit object-cover z-[-1]">
           <Image width={500} height={260} alt="Banner" src={BannerImage} />
         </div>
       </div>
