@@ -1,6 +1,7 @@
 import Banner from "./components/Banner";
 import CarouselProduct from "./components/CarouselProduct";
 import DesignedSection from "./components/Designed";
+import ProjectSection from "./components/Project";
 
 const HomePage = () => {
   return (
@@ -8,6 +9,7 @@ const HomePage = () => {
       <Banner />
       <CarouselProduct />
       <DesignedSection />
+      <ProjectSection />
     </main>
   );
 };

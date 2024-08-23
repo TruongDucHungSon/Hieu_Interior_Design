@@ -17,7 +17,7 @@ const Header = () => {
           <Link href="https://www.facebook.com/KofWoTH">
             <TiSocialFacebook size={24} />
           </Link>
-          <Link href="/">
+          <Link href="tel:0345197586">
             <SiZalo size={24} />
           </Link>
         </div>

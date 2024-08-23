@@ -8,7 +8,7 @@ const Banner = () => {
         Book an orientation with
         <span className="font-bold text-[#000] pl-1">Tran Hieu Designer</span>
       </h4>
-      <div className="flex w-full items-start lg:items-start relative flex-col-reverse lg:flex-row gap-8 lg:justify-between mt-4 lg:mt-20">
+      <div className="flex w-full items-start lg:items-start relative flex-col-reverse lg:flex-row gap-8 lg:justify-between my-4 lg:my-20">
         <div className="w-full lg:w-[50%] mt-0 lg:pl-64 lg:mt-20">
           <div className="w-[300px] ">
             <h4 className="text-4xl lg:text-7xl font-fair ">We Love</h4>

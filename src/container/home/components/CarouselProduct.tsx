@@ -13,7 +13,7 @@ import { DATA_PRODUCT } from "../../../utils/constants";
 
 const CarouselProduct = () => {
   return (
-    <section className=" flex items-start flex-col-reverse gap-6 lg:flex-row lg:items-center justify-between mt-20 lg:mt-32 container">
+    <section className="flex items-start flex-col-reverse gap-6 lg:flex-row lg:items-center justify-between mt-20 lg:mt-32 container">
       <div className="lg:w-[29%] w-full">
         <TitleSection>New Arrivals</TitleSection>
         <p className="text-[#797979] text-[14px] tracking-tight my-5">
@@ -23,7 +23,7 @@ const CarouselProduct = () => {
         </p>
         <Link
           href="/"
-          className="uppercase text-sm text-[#000]  border-b-[2px] border-[#000]"
+          className="uppercase text-sm text-primary  border-b border-[#000]"
         >
           View all
         </Link>

@@ -7,6 +7,11 @@ const DesignImage2 = require("../assets/images/ds2.jpg");
 const DesignImage3 = require("../assets/images/ds3.jpg");
 const DesignImage4 = require("../assets/images/ds4.jpg");
 
+const ProjectImage1 = require("../assets/images/pj1.jpg");
+const ProjectImage2 = require("../assets/images/pj2.jpg");
+const ProjectImage3 = require("../assets/images/pj3.jpg");
+const ProjectImage4 = require("../assets/images/pj4.jpg");
+
 export const DATA_PRODUCT = [
   {
     id: 0,
@@ -31,6 +36,36 @@ export const DATA_PRODUCT = [
     name: "Arm Sofas",
     price: "$45.80",
     image: ProductImage4,
+  },
+] as const;
+
+export const DATA_PROJECT = [
+  {
+    id: 0,
+    label: "Project",
+    price: "Mono Redesign",
+    image: ProjectImage1,
+  },
+  {
+    id: 1,
+    label: "Project",
+
+    price: "Mono Redesign",
+    image: ProjectImage2,
+  },
+  {
+    id: 2,
+    label: "Project",
+
+    price: "Mono Redesign",
+    image: ProjectImage3,
+  },
+  {
+    id: 3,
+    label: "Project",
+
+    price: "Mono Redesign",
+    image: ProjectImage4,
   },
 ] as const;
 
