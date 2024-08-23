@@ -5,18 +5,17 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "../../../components/ui/carousel";
 
 import Image from "next/image";
+import TitleSection from "../../../components/tittle/TitleSection";
 import { DATA_PRODUCT } from "../../../utils/constants";
 
 const CarouselProduct = () => {
   return (
-    <section className=" flex items-start flex-col-reverse gap-6 lg:flex-row lg:items-center justify-between mt-20 container">
+    <section className=" flex items-start flex-col-reverse gap-6 lg:flex-row lg:items-center justify-between mt-20 lg:mt-32 container">
       <div className="lg:w-[29%] w-full">
-        <h4 className="text-3xl font-fair ">New Arrivals</h4>
+        <TitleSection>New Arrivals</TitleSection>
         <p className="text-[#797979] text-[14px] tracking-tight my-5">
           We’ve designed and curated pieces that are a cut above your average
           home goods, because when you level up your everyday objects, you
@@ -46,8 +45,6 @@ const CarouselProduct = () => {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="hidden lg:flex" />
-        <CarouselNext className="hidden lg:flex" />
       </Carousel>
     </section>
   );

@@ -14,7 +14,7 @@ const Header = () => {
           <Link href="/">
             <AiFillInstagram size={24} />
           </Link>
-          <Link href="/">
+          <Link href="https://www.facebook.com/KofWoTH">
             <TiSocialFacebook size={24} />
           </Link>
           <Link href="/">

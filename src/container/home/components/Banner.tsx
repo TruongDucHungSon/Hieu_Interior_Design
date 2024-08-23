@@ -1,6 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
 import BannerImage from "../../../assets/images/Banner.jpg";
+import CustomImage from "../../../components/customImage/CustomImage";
 const Banner = () => {
   return (
     <section className="relative container">
@@ -9,10 +9,10 @@ const Banner = () => {
         <span className="font-bold text-[#000] pl-1">Tran Hieu Designer</span>
       </h4>
       <div className="flex w-full items-start lg:items-start relative flex-col-reverse lg:flex-row gap-8 lg:justify-between mt-4 lg:mt-20">
-        <div className="w-full lg:w-[50%] lg:pl-64 mt-20">
+        <div className="w-full lg:w-[50%] mt-0 lg:pl-64 lg:mt-20">
           <div className="w-[300px] ">
-            <h4 className="text-3xl lg:text-4xl font-fair ">We Love</h4>
-            <p className="text-3xl lg:text-4xl font-fair ">Minimalism.</p>
+            <h4 className="text-4xl lg:text-7xl font-fair ">We Love</h4>
+            <p className="text-4xl lg:text-7xl font-fair ">Minimalism.</p>
           </div>
           <p className="text-[#797979] text-[12px] font-medium mt-2 mb-5 lg:mt-4 lg:mb-8 uppercase tracking-wider">
             INTERIOR DESIGN
@@ -25,8 +25,8 @@ const Banner = () => {
             View Project
           </Link>
         </div>
-        <div className="lg:w-[45%] w-full h-[260px] md:h-[350px] lg:h-fit object-cover z-[-1]">
-          <Image width={500} height={260} alt="Banner" src={BannerImage} />
+        <div className="lg:w-[45%] w-full h-[360] md:h-[460px] lg:h-fit object-cover z-[-1]">
+          <CustomImage src={BannerImage.src} alt="Banner" />
         </div>
       </div>
     </section>
