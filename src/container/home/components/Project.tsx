@@ -7,6 +7,8 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
 } from "../../../components/ui/carousel";
 const ProjectSection = () => {
   return (
@@ -17,34 +19,36 @@ const ProjectSection = () => {
         </h4>
         <div>
           <Carousel
-            className="w-full"
+            className="w-[90%] mx-auto"
             opts={{
               align: "start",
               loop: true,
             }}
             plugins={[
               Autoplay({
-                delay: 3000,
+                delay: 4000,
               }),
             ]}
           >
             <CarouselContent>
               {DATA_PROJECT.map((item) => (
                 <CarouselItem key={item.id} className="relative">
-                  <div className="w-full h-[500px] lg:h-[695px] relative before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-[#000] before:opacity-[0.4] z-[-1]">
+                  <div className="w-full mx-auto h-[300px] md:h-[500px] lg:h-[695px] relative before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-[#000] before:opacity-[0.6] z-[-1]">
                     <CustomImage src={item.image} alt="Product" />
-                  </div>
-                  <div className="text-base absolute left-14 bottom-[30px] w-full">
-                    <p className="text-sm lg:text-base text-[#797979] tracking-widest uppercase">
-                      {item.label}
-                    </p>
-                    <p className="text-sm text-[42px] lg:text-[74px] leading-[80px]  text-[#fff] font-fair">
-                      {item.price}
-                    </p>
+                    <div className="text-base absolute left-7 lg:left-10 bottom-5 lg:bottom-[35px] w-full">
+                      <p className="text-sm lg:text-base text-[#797979] tracking-widest uppercase">
+                        {item.label}
+                      </p>
+                      <p className="text-[30px] leading-8 lg:text-[74px] lg:leading-[80px]  text-[#fff] font-fair">
+                        {item.price}
+                      </p>
+                    </div>
                   </div>
                 </CarouselItem>
               ))}
             </CarouselContent>
+            <CarouselNext className="bg-black text-white" />
+            <CarouselPrevious className=" bg-black text-white" />
           </Carousel>
         </div>
       </div>
