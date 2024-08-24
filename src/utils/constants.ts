@@ -87,3 +87,22 @@ export const DATA_DESIGNED = [
     image: DesignImage4,
   },
 ] as const;
+
+export const DATA_DESIGNER = [
+  {
+    id: 0,
+    image: require("../assets/images/d1.jpg"),
+  },
+  {
+    id: 1,
+    image: require("../assets/images/d2.jpg"),
+  },
+  {
+    id: 2,
+    image: require("../assets/images/d3.jpg"),
+  },
+  {
+    id: 3,
+    image: require("../assets/images/d4.jpg"),
+  },
+] as const;

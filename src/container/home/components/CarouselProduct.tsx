@@ -13,7 +13,7 @@ import { DATA_PRODUCT } from "../../../utils/constants";
 
 const CarouselProduct = () => {
   return (
-    <section className="flex items-start flex-col-reverse gap-6 lg:flex-row lg:items-center justify-between mt-20 lg:mt-32 container">
+    <section className="flex items-start flex-col-reverse gap-6 lg:flex-row lg:items-center justify-between my-20 lg:my-32 container">
       <div className="lg:w-[29%] w-full">
         <TitleSection>New Arrivals</TitleSection>
         <p className="text-[#797979] text-[14px] tracking-tight my-5">

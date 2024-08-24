@@ -14,7 +14,7 @@ const ProjectSection = () => {
   return (
     <section className="py-10 lg:py-20 lg:pt-32 bg-[#000]">
       <div className="container">
-        <h4 className="text-[14px] text-[#797979] lg:text-[16px] flex justify-end w-full mb-6 lg:mb-12">
+        <h4 className="text-[14px] text-[#797979] lg:text-[16px] flex justify-end w-full mb-3 md:mb-6 lg:mb-12">
           We design your <span className="text-white pl-1">home.</span>
         </h4>
         <div>

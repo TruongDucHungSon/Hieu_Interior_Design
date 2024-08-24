@@ -17,8 +17,8 @@ const DesignedSection = () => {
           elevate your daily rituals. Let the magic happen.
         </p>
       </div>
-      <div className="flex flex-col gap-8">
-        <div className="grid grid-cols-1 md:grid-cols-[0.5fr_1fr] grid-rows-1 grid-flow-row gap-x-8 gap-y-8">
+      <div className="flex flex-col gap-4 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-[0.5fr_1fr] grid-rows-1 grid-flow-row gap-4 lg:gap-x-8 lg:gap-y-8">
           <div className="w-full h-[300px] lg:[446px] lg:h-[600px]">
             <CustomImage src={DesignImage1.src} alt="Designed" />
           </div>
@@ -26,7 +26,7 @@ const DesignedSection = () => {
             <CustomImage src={DesignImage2.src} alt="Designed" />
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-[1fr_0.5fr] grid-rows-1  grid-flow-row gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_0.5fr] grid-rows-1  grid-flow-row gap-4 lg:gap-8">
           <div className="w-full h-[300px]  lg:[446px] lg:h-[600px]">
             <CustomImage src={DesignImage3.src} alt="Designed" />
           </div>
