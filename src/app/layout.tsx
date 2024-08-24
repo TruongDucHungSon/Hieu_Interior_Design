@@ -1,3 +1,4 @@
+import Footer from "@/layout/footer/Footer";
 import Header from "@/layout/header/Header";
 
 import type { Metadata } from "next";
@@ -24,7 +25,7 @@ export default function RootLayout({
       <body className={FontPoppins.className}>
         <Header />
         {children}
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );

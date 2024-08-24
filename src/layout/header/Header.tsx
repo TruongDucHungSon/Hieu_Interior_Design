@@ -1,8 +1,7 @@
 import Link from "next/link";
 import { AiFillInstagram } from "react-icons/ai";
+import { FaFacebookSquare, FaLinkedin } from "react-icons/fa";
 import { LuMenu } from "react-icons/lu";
-import { SiZalo } from "react-icons/si";
-import { TiSocialFacebook } from "react-icons/ti";
 const Header = () => {
   return (
     <header>
@@ -15,10 +14,10 @@ const Header = () => {
             <AiFillInstagram size={24} />
           </Link>
           <Link href="https://www.facebook.com/KofWoTH">
-            <TiSocialFacebook size={24} />
+            <FaFacebookSquare size={24} />
           </Link>
-          <Link href="tel:0345197586">
-            <SiZalo size={24} />
+          <Link href="/">
+            <FaLinkedin size={24} />
           </Link>
         </div>
         <h1 className="font-fair text-xl text-center font-semibold w-[200px] ">
