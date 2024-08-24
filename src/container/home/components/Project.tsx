@@ -47,8 +47,8 @@ const ProjectSection = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselNext className="bg-black text-white" />
-            <CarouselPrevious className=" bg-black text-white" />
+            <CarouselNext className="bg-black text-white -right-10 lg:-right-12" />
+            <CarouselPrevious className=" bg-black text-white -left-10 lg:-left-12" />
           </Carousel>
         </div>
       </div>
