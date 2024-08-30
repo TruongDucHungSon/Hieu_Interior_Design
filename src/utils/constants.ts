@@ -117,6 +117,14 @@ export const MENU_LIST = [
 		path: '/blog',
 	},
 	{
+		name: 'Facebook',
+		path: 'https://www.facebook.com/KofWoTH',
+	},
+	{
+		name: 'Zalo',
+		path: 'https://zalo.me/0345197586',
+	},
+	{
 		name: 'Contact: 034 519 7586',
 		path: '/blog',
 	},
