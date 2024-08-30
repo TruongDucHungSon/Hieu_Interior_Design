@@ -106,3 +106,14 @@ export const DATA_DESIGNER = [
     image: require("../assets/images/d4.jpg"),
   },
 ] as const;
+
+export const MENU_LIST = [
+  {
+    name: "Home",
+    path: "/",
+  },
+  {
+    name: "Blog",
+    path: "/blog",
+  },
+] as const;

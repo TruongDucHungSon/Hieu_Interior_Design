@@ -1,8 +1,8 @@
-import Banner from "./components/Banner";
-import CarouselProduct from "./components/CarouselProduct";
-import DesignSection from "./components/DesignSection";
-import DesignedSection from "./components/Designed";
-import ProjectSection from "./components/Project";
+import Banner from "./_components/SectionBanner";
+import CarouselProduct from "./_components/SectionCarouselProduct";
+import DesignSection from "./_components/SectionDesign";
+import DesignedSection from "./_components/SectionDesigned";
+import ProjectSection from "./_components/SectionProject";
 
 const HomePage = () => {
   return (
