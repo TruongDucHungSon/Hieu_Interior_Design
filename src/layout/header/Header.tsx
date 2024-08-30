@@ -5,12 +5,11 @@ import { MENU_LIST } from '@/utils/constants';
 import { map } from 'lodash';
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
-import { AiFillInstagram } from 'react-icons/ai';
 import { FaFacebookSquare, FaLinkedin } from 'react-icons/fa';
 import { IoMdClose } from 'react-icons/io';
 import { LuMenu } from 'react-icons/lu';
+import { SiZalo } from 'react-icons/si';
 import { useOutsideClick } from './action';
-
 const Header = () => {
 	const [showMenu, setShowMenu] = useState<boolean>(false); // default to false
 	const menuRef = useRef<HTMLDivElement>(null);
@@ -43,10 +42,10 @@ const Header = () => {
 			<h2 className="text-[10px] lg:text-[12px] uppercase text-center w-full py-4 bg-black text-white">
 				Make room for better living
 			</h2>
-			<div className="container mx-auto flex items-center justify-between my-4 lg:my-8 px-4">
+			<div className="container mx-auto flex items-center justify-between mt-4 lg:my-8 px-4">
 				<div className="flex items-center gap-2 lg:w-[110px]">
-					<Link href="/">
-						<AiFillInstagram size={24} />
+					<Link href="https://zalo.me/0345197586">
+						<SiZalo size={24} />
 					</Link>
 					<Link href="https://www.facebook.com/KofWoTH">
 						<FaFacebookSquare size={24} />
