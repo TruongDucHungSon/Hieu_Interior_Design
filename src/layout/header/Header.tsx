@@ -39,11 +39,11 @@ const Header = () => {
 
 	return (
 		<header className="relative">
-			<h2 className="text-[10px] lg:text-[12px] uppercase text-center w-full py-4 bg-black text-white">
+			<h2 className="text-[10px] lg:text-[12px] uppercase text-center w-full py-4 bg-black/90 text-white">
 				Make room for better living
 			</h2>
 			<div className="container mx-auto flex items-center justify-between mt-4 lg:my-8 px-4">
-				<div className="flex items-center gap-2 lg:w-[110px]">
+				<div className="lg:flex hidden items-center gap-2 lg:w-[110px]">
 					<Link href="https://zalo.me/0345197586">
 						<SiZalo size={24} />
 					</Link>
@@ -56,12 +56,16 @@ const Header = () => {
 				</div>
 				<Link
 					href="/"
-					className="font-fair text-[#b88e2f] text-xl font-semibold text-center w-[200px]"
+					className="font-fair text-[#b88e2f] text-base lg:text-xl font-semibold text-center w-fit"
 				>
-					TRAN HIEU
+					LOGO THUẬN HƯNG
 				</Link>
 				{/* overlay */}
-				<div className={`fixed inset-0 bg-black opacity-20 ${showMenu ? '' : 'hidden'}`}></div>
+				<div
+					className={`fixed inset-0 bg-black transition-opacity duration-300 ${
+						showMenu ? 'opacity-20 visible' : 'opacity-0 invisible'
+					}`}
+				/>
 				{/* navigation */}
 				<nav className="flex items-center justify-end w-[60px] lg:w-[110px]">
 					<LuMenu
@@ -71,16 +75,16 @@ const Header = () => {
 					<div
 						ref={menuRef} // Attach ref to the menu div
 						className={`${
-							showMenu ? 'left-0' : '-left-full'
-						} fixed top-0 bottom-0 w-[70%] lg:w-[600px] bg-white z-50 transition-all duration-500 ease-in-out p-8`}
+							showMenu ? 'visible opacity-100 left-0' : 'invisible opacity-0 -left-full'
+						} fixed top-0 bottom-0 w-[70%] lg:w-[600px] bg-white z-50 transition-all duration-500 ease-in-out p-6 lg:p-8`}
 					>
 						<ul className="flex flex-col items-start justify-start h-full gap-8">
 							<div className="flex items-center justify-between w-full">
 								<Link
 									href="/"
-									className="text-[#b88e2f] text-xl font-bold"
+									className="text-[#b88e2f] font-fair text-lg font-bold"
 								>
-									Tran Hieu Interior Designer
+									LOGO THUẬN HƯNG
 								</Link>
 								<IoMdClose
 									size={26}
@@ -95,7 +99,7 @@ const Header = () => {
 								>
 									<Link
 										href={item.path}
-										className=" text-base lg:text-lg text-[#000] font-bold relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-[#000] after:transition-all after:duration-300 hover:after:w-full after:ease-in-out"
+										className=" text-sm lg:text-lg text-[#000] font-bold relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-[#000] after:transition-all after:duration-300 hover:after:w-full after:ease-in-out"
 									>
 										{item.name}
 									</Link>

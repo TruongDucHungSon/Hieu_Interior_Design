@@ -114,18 +114,18 @@ export const MENU_LIST = [
 	},
 	{
 		name: 'Blog',
-		path: '/blog',
+		path: '/',
 	},
 	{
 		name: 'Facebook',
-		path: 'https://www.facebook.com/KofWoTH',
+		path: '/',
 	},
 	{
 		name: 'Zalo',
-		path: 'https://zalo.me/0345197586',
+		path: '/',
 	},
 	{
-		name: 'Contact: 034 519 7586',
+		name: 'Contact: 0827509503',
 		path: '/blog',
 	},
 ] as const;
