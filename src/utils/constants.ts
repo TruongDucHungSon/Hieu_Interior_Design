@@ -126,7 +126,7 @@ export const MENU_LIST = [
 	},
 	{
 		name: 'Contact: 0827509503',
-		path: '/blog',
+		path: '/',
 	},
 ] as const;
 
